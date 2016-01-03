@@ -1,0 +1,123 @@
+html,body{
+    height: 100%;
+    background: #1c1c1c
+}
+a:hover{
+    color: gray;
+}
+header{
+    display: flex;
+    background: #000;
+    padding-top: 18px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.child{
+    flex-grow: 1;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: "row wrap";
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    flex-grow: 1;
+    text-align: center;
+    width:100px;
+}
+
+ul li a{
+    color: white;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+header div:nth-child(1){
+    flex-grow: 8;
+    width: 125px;
+    padding-bottom: 15px;
+}
+
+header div:nth-child(1) img{
+    margin-left: 20px;
+}
+
+#search{
+    background: #3a3a3a url(../images/magnify2.png) no-repeat 5px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 4px 4px 4px 25px;
+    display: none;
+}
+
+#magnify {
+    cursor: pointer;
+}
+h1, p{
+    color: #b2b2b2;
+    font-family: "Raleway";
+}
+
+.container {
+    padding: 80px;
+}
+
+@media all and (max-width:800px){
+    header {
+        justify-content: space-around;
+    }
+    .container {
+        padding: 50px;
+    }
+    #search{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 542px){
+    header div:nth-child(1){
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 0;
+    }
+    header {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .child {
+        flex-grow: 1;
+        text-align: center;
+    }
+    ul {
+        background: #232323;
+        width: 100%;
+        margin-top: 15px;
+    }
+    ul li {
+        width: 50%;
+        padding: 5px;
+    }
+    herader div:nth-child(2){
+        align-self: flex-end;
+        width: 22px;
+    }
+    #search {
+        display: block;
+        width: 80%;
+        margin 16px auto 0 auto;
+    }
+    #magnify{
+        display: none;
+    }
+    .container {
+        padding: 30px;
+    }
+}
