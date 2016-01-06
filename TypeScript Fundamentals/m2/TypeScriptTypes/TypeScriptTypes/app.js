@@ -8,9 +8,7 @@ var Greeter = (function () {
     }
     Greeter.prototype.start = function () {
         var _this = this;
-        this.timerToken = setInterval(function () {
-            return _this.span.innerText = new Date().toUTCString();
-        }, 500);
+        this.timerToken = setInterval(function () { return _this.span.innerText = new Date().toUTCString(); }, 500);
     };
     Greeter.prototype.stop = function () {
         clearTimeout(this.timerToken);
@@ -22,4 +20,4 @@ window.onload = function () {
     var greeter = new Greeter(el);
     greeter.start();
 };
-//@ sourceMappingURL=app.js.map
+//# sourceMappingURL=app.js.map

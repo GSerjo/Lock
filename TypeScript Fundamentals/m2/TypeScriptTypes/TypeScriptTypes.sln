@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptTypes - Before", "TypeScriptTypes\TypeScriptTypes - Before.csproj", "{753092BF-D546-45B9-BEB3-5A44D3598924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{B99F4D3C-4B77-4228-BA53-B46339CC815C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{753092BF-D546-45B9-BEB3-5A44D3598924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753092BF-D546-45B9-BEB3-5A44D3598924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753092BF-D546-45B9-BEB3-5A44D3598924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99F4D3C-4B77-4228-BA53-B46339CC815C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99F4D3C-4B77-4228-BA53-B46339CC815C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99F4D3C-4B77-4228-BA53-B46339CC815C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99F4D3C-4B77-4228-BA53-B46339CC815C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
