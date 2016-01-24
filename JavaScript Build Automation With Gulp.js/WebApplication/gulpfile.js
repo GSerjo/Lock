@@ -6,12 +6,12 @@ var gulp = require('gulp');
 //var gulpprint = require('gulp-print');
 
 var $ = require('gulp-load-plugins')({lazy: true});
-
+var config = require('./gulp.config')();
 
 gulp.task('hello-world', function () {
     log('Analyzing source with JSHINT and JSCS');
 
-    return gulp.src(['./ScriptsCustom/**/*.js'])
+    return gulp.src(config.alljs)
                .pipe($.print())
                .pipe($.jscs())
                .pipe($.jshint())
